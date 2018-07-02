@@ -13,7 +13,7 @@ class ConnectionExt extends \yii\db\Connection
     {
         parent::init();
 
-        $this->schemaMap['mysqli'] = 'common\components\snldbextra\Schema';
-        $this->schemaMap['mysql'] = 'common\components\snldbextra\Schema';
+        $this->schemaMap['mysqli'] = 'common\components\snldbextra\SchemaExt';
+        $this->schemaMap['mysql'] = 'common\components\snldbextra\SchemaExt';
     }
 }
